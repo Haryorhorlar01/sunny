@@ -1,0 +1,408 @@
+/* primary */
+/* Neutral - vd-:veryDark  d-:dark */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700&family=Fraunces:wght@400;500;600;700;900&display=swap");
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 467px) {
+  .hero .hero__header {
+    font-size: 4rem;
+  }
+  header .hero {
+    grid-gap: 4rem !important;
+  }
+  header .navigation__list, .cta {
+    display: block;
+  }
+  .menu-btn__burger {
+    display: block !important;
+    font-size: 3rem !important;
+  }
+  .menu-btn__burger .fa-times {
+    display: none;
+  }
+  header .navigation .navigation__list {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #fff;
+    width: 90%;
+    color: #000;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    padding: 6rem;
+    transform: translate(-18px, 45px);
+  }
+  header .navigation__item {
+    padding: 0 !important;
+  }
+  .navigation__item a {
+    color: #23303e;
+  }
+  .cta-btn {
+    background-color: #fad400;
+    padding: 1.5rem 2.5rem !important;
+    font-size: 1.2rem;
+  }
+  header .navigation .logo {
+    margin-left: 2.5rem;
+  }
+  .brand {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+  }
+  .brand__article {
+    width: 100% !important;
+    gap: 0 !important;
+    height: 55vh !important;
+    justify-content: center;
+  }
+  .brand__article .btn {
+    font-size: 1.8rem !important;
+  }
+  .brand__article .btn::after {
+    width: 35% !important;
+    left: 50% !important;
+    transform: translate(-50%, -2px) !important;
+  }
+  .brand__article h1 {
+    font-size: 4rem !important;
+  }
+  .brand__article p {
+    padding: 2rem;
+  }
+  .brand__title {
+    font-size: 4rem !important;
+  }
+  .brand__graphics {
+    overflow: hidden;
+    max-height: 100vh;
+  }
+  .brand__graphics img {
+    height: 87vh;
+    max-width: max-content;
+    width: max-content;
+  }
+  .brand__graphics h1 {
+    font-size: 4rem !important;
+    bottom: 16rem !important;
+  }
+  .brand__graphics p {
+    width: 100% !important;
+    font-size: 1.6rem !important;
+    bottom: 4rem !important;
+    padding: 2rem;
+  }
+  .flex-egg {
+    order: -1 !important;
+  }
+  .flex-cup {
+    order: 0 !important;
+  }
+  .flex-3 {
+    order: 1 !important;
+  }
+  .flex-4 {
+    order: 0 !important;
+  }
+  .client {
+    margin-top: 5rem !important;
+    height: 888px;
+  }
+  .client h1 {
+    font-size: 1.8rem !important;
+    letter-spacing: 4px !important;
+  }
+  .client .client__article {
+    flex-direction: column !important;
+    margin-top: 40rem;
+    height: 0;
+  }
+  .client .client__article .col-3 {
+    max-width: fit-content !important;
+    margin-bottom: 2rem;
+    width: 339px;
+  }
+  .slider {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    overflow: hidden;
+  }
+  .slider img {
+    width: 200px;
+    object-fit: cover;
+    height: 27.9vh;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  width: 125.5rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+li, a, button {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+header {
+  background: url(../images/desktop/image-header.jpg) center no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header .menu-btn__burger {
+  position: absolute;
+  right: 3rem;
+  color: #fff;
+  display: none;
+}
+
+header .navigation {
+  display: flex;
+  align-items: center;
+  grid-gap: 4rem;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
+header .navigation .logo {
+  margin-right: auto;
+  width: 15rem;
+}
+
+header .navigation__list {
+  display: flex;
+  justify-content: space-around;
+  gap: 2.5rem;
+}
+
+header .navigation__item {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+header .navigation__link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+}
+
+header .navigation .cta-btn {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+}
+
+header .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  text-align: center;
+  grid-gap: 7rem;
+  margin-top: 7.5rem;
+}
+
+header .hero__header {
+  color: #fff;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  font-family: 'Fraunces', sans-serif;
+  letter-spacing: 1rem;
+}
+
+.brand {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.brand__article {
+  width: 67.9%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 4rem;
+  margin: auto;
+}
+
+.brand__article h1 {
+  font-size: 5rem;
+}
+
+.brand__article p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.brand__article .btn {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  position: relative;
+}
+
+.brand__article .btn::after {
+  content: '';
+  width: 22.5%;
+  background-color: #fad400;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.brand__graphics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #25564b;
+  position: relative;
+}
+
+.brand__graphics h1 {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 17rem;
+}
+
+.brand__graphics p {
+  font-size: 1.8rem;
+  width: 52%;
+  text-align: center;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 6rem;
+}
+
+.client {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 10rem;
+  gap: 5rem;
+  margin-bottom: 6rem;
+}
+
+.client h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #5a636c;
+}
+
+.client__article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.client__article .col-3 {
+  max-width: 26vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 3rem;
+  padding: 2rem;
+}
+
+.client__article .col-3 img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.client__article .col-3 p {
+  font-size: 1.8rem;
+}
+
+.client__article .col-3 .name--post {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.client__article .col-3 .name--post span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.client__article .col-3 .name--post small {
+  font-size: 1.5rem;
+  color: #5a636c;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer {
+  background-color: #70c2b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+footer .navigation {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer .logo {
+  width: 150px;
+}
+
+footer .navigation__list {
+  display: flex;
+}
+
+footer .navigation__list .navigation__item {
+  list-style-type: none;
+}
+
+footer .navigation__list .navigation__item .navigation__link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 2rem;
+  color: #23303e;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+/*# sourceMappingURL=main.css.map */

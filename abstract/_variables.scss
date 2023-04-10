@@ -1,0 +1,29 @@
+// COLORS
+
+/* primary */
+$color-soft-red: hsl(7, 99%, 70%);
+$color-yellow: hsl(51, 100%, 49%);
+$color-graphic-text: hsl(167, 40%, 24%);
+$color-photography-text: hsl(198, 62%, 26%);
+$color-footer: hsl(168, 34%, 41%);
+$bg-footer: hsla(168, 40%, 60%, 1);
+
+/* Neutral - vd-:veryDark  d-:dark */
+$vd-desaturated-blue: hsl(212, 27%, 19%);
+$vd-grayish-blue: hsl(213, 9%, 39%);
+$d-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+
+
+// FONTS
+$default-font-size: 1.8rem;
+
+// FONTS WEIGHTS
+$font-weights: (
+    "regular": 300,
+    "medium": 500,
+    "bold": 500,
+    "x-bold": 900,
+);
